@@ -66,8 +66,8 @@ export default function AltCadastro() {
         </div>
         <div>
           <button type='submit'>Submit</button>
-          <Button href='/'>Voltar</Button>
-        </div> 
+        </div>
+        <Button href='/logado'>Voltar</Button>
     </>
   )
 }

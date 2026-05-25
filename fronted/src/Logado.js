@@ -1,6 +1,7 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import AcharMateria from './acharMateria';
 
 export default function Logado(){
     return (
@@ -14,6 +15,7 @@ export default function Logado(){
                 <Button href='/verMateria'>Ver Matéria</Button>
                 <br></br>
                 <Button href='/adicionarAmigo'>Adicionar Amigo</Button>
+                < AcharMateria/>
             </Col>
         </Row>
     )

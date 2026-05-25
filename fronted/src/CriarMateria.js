@@ -31,7 +31,7 @@ export default function FormMateria() {
         </div>
         <div>
           <label htmlFor='texto'>Texto</label>
-          <input name='Texto' onChange={handleChangeValue} />
+          <input name='texto' onChange={handleChangeValue} />
         </div>
         <div>
           <label htmlFor='gender'>Tipo</label>

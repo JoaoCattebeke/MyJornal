@@ -4,7 +4,7 @@ import FormLogin from "./FormLogin";
 import PrimeiraPagina from "./PrimeiraPagina";
 import Logado from "./Logado";
 import FormMateria from "./CriarMateria";
-import AltCadastro from "./PaginaAltCadastro";
+import AltCadastro from "./AltCadastro";
 import VerMateria from "./VerMateria";
 import AdicionarAmigo from "./AdicionarAmigo"
 
@@ -15,7 +15,7 @@ export default function Formularios(){
         <Route path="/" element={<PrimeiraPagina />} />
         <Route path="/formCadastro" element={<FormCadastro />} />
         <Route path="/formLogin" element={<FormLogin />} />
-        //Pagina logado
+        
         <Route path="/logado" element={<Logado />} />
         <Route path="/formMateria" element={<FormMateria />} />
         <Route path="/altCadastro" element={<AltCadastro />} />

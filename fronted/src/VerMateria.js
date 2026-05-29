@@ -18,7 +18,7 @@ export default function VerMateria() {
                 alt="Falha ao carregar imagem"/>
             <div>
                 <Button href='/logado'>Voltar</Button>
-            </div> 
+            </div>
         </>
     );
 }

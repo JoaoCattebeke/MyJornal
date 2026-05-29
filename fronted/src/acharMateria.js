@@ -5,19 +5,24 @@ import Button from 'react-bootstrap/Button';
 
 export default function AcharMateria() {
     const [busca, setBusca] = useState('');
+    let materia = ''
 
     const materias = [];
     for (const index in ListaMaterias){
         materias.push(ListaMaterias[index].titulo);
     }
     
-    const materiasFiltrados = materias.filter((materia) =>
-        materia.toLowerCase().includes(busca.toLowerCase())
+    const materiasFiltrados = materias.filter((mat) =>
+        mat.toLowerCase().includes(busca.toLowerCase())
     );
 
     const handleSubmit = (event) => {
-        event.preventDefault()
-        console.log(materiasFiltrados)
+        event.preventDefault();
+    }
+
+    function handleClick(mat, materia){
+        materia = mat;
+        console.log(materia);
     }
     return (
         <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
@@ -31,11 +36,12 @@ export default function AcharMateria() {
                 style={{ padding: '8px', width: '250px', marginBottom: '15px' }}
                 />
                 <ul>
-                {materiasFiltrados.map((materia, index) => (
-                    <li key={index}>{materia}</li>
+                {materiasFiltrados.map((mat, index) => (
+                    <li key={index}>
+                        <button onClick={() => handleClick(mat, materia)}>{mat}</button>
+                    </li>
                 ))}
                 </ul>           
-                <button type='submit'>Submit</button>       
             </form>
             <Button href='/logado'>Voltar</Button>
         </div>

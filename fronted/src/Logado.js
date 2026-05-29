@@ -16,6 +16,7 @@ export default function Logado(){
                 <br></br>
                 <Button href='/adicionarAmigo'>Adicionar Amigo</Button>
                 < AcharMateria/>
+                <Button href='/'>Deslogar</Button>
             </Col>
         </Row>
     )

@@ -1,4 +1,4 @@
 export const ListaRelacionamentos = [{
-    usuario: '',
-    amigo: ''
+    usuario: 'Joao',
+    amigo: 'Marta'
 }]

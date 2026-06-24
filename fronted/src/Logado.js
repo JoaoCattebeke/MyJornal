@@ -1,23 +1,31 @@
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import AcharMateria from './acharMateria';
+import './style/logado.css'
 
 export default function Logado(){
     return (
-        <Row>
-            <h1>Página Logada</h1>
-            <Col>
-                <Button href="/formMateria">Formulario Criar Matéria</Button>
-                <br></br>
-                <Button href="/altCadastro">Alterar Cadastro</Button>
-                <br></br>
-                <Button href='/verMateria'>Ver Matéria</Button>
-                <br></br>
-                <Button href='/adicionarAmigo'>Adicionar Amigo</Button>
-                < AcharMateria/>
-                <Button href='/'>Deslogar</Button>
-            </Col>
-        </Row>
+        <>
+            <header class="cabecalho">
+            <h1>MYJORNAL</h1>
+                <nav class="menu" aria-label="Menu principal">
+                    <button class="botao botao-menu" type="button">
+                        <Button href='/adicionarAmigo'>Adicionar<br></br>Amigo</Button>
+                        </button>
+                    <button class="botao botao-menu" type="button">
+                        <Button href='/pedidosRecebidos'>Pedidos<br></br>Recebidos</Button>
+                        </button>
+                    <button class="botao botao-menu" type="button">
+                        <Button href='/solicitacoes'>Solicitações de<br></br>Amizade</Button>
+                        </button>
+                    <button class="botao botao-menu" type="button">
+                        <Button href='/amigos'>Amigos</Button>
+                    </button>
+                    <button class="botao botao-conta" type="button">
+                        <Button href='/altCadastro'>Conta</Button>
+                    </button>
+                </nav>
+            </header>
+            <AcharMateria />
+        </>
     )
 }

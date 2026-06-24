@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ListaMaterias } from './db/dadosMaterias';
 import Button from 'react-bootstrap/Button';
+import './style/logado.css'
 
 
 export default function AcharMateria() {
@@ -26,7 +27,8 @@ export default function AcharMateria() {
     }
     return (
         <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-            <h2>Lista de Materias</h2>
+            <h2>PUBLICAÇÕES</h2>
+            <section class="publicacoes" aria-label="Publicações recentes">
             <form onSubmit={handleSubmit}>
                 <input
                 type="text"
@@ -38,12 +40,22 @@ export default function AcharMateria() {
                 <ul>
                 {materiasFiltrados.map((mat, index) => (
                     <li key={index}>
-                        <button onClick={() => handleClick(mat, materia)}>{mat}</button>
+                        <article class="publicacao">
+                            <div class="espaco-imagem">
+                                <img src="https://media-public.canva.com/LrDro/MAGmDxLrDro/1/s3.jpg" alt="img1"></img>
+                                <h3>
+                                    <button onClick={() => handleClick(mat, materia)}>
+                                        <Button href='/verMateria'>{mat}</Button>
+                                    </button>
+                                </h3>
+                            </div>
+                        </article>
+                        
                     </li>
                 ))}
                 </ul>           
             </form>
-            <Button href='/logado'>Voltar</Button>
+            </section>
         </div>
     );
 }

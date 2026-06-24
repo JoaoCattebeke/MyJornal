@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import Button from 'react-bootstrap/Button';
+import './style/cadastro.css'
 
 export default function FormLogin() {
   const [dataForm, setDataForm] = useState({
@@ -20,13 +21,14 @@ export default function FormLogin() {
   }
 
   return (
-    <div className='Form'>
+    <div className='form-container'>
+      <h1>Login</h1>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className='form-group'>
           <label htmlFor='email'>Email</label>
           <input name='email' onChange={handleChangeValue} />
         </div>
-        <div>
+        <div className='form-group'>
           <label htmlFor='senha'>Senha</label>
           <input name='senha' onChange={handleChangeValue} />
         </div>

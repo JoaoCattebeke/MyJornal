@@ -6,7 +6,7 @@ import Logado from "./Logado";
 import FormMateria from "./CriarMateria";
 import AltCadastro from "./AltCadastro";
 import VerMateria from "./VerMateria";
-import AdicionarAmigo from "./AdicionarAmigo"
+import PedidosRecebidos from "./PedidosRecebidos"
 
 export default function Formularios(){
   return (
@@ -20,7 +20,7 @@ export default function Formularios(){
         <Route path="/formMateria" element={<FormMateria />} />
         <Route path="/altCadastro" element={<AltCadastro />} />
         <Route path="/verMateria" element={<VerMateria />} />
-        <Route path="/adicionarAmigo" element={<AdicionarAmigo />} />
+        <Route path="/pedidosRecebidos" element={<PedidosRecebidos />} />
       </Routes>
     </Router>
   )

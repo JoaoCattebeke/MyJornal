@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Button from 'react-bootstrap/Button';
+import './style/cadastro.css'
 
 
 export default function FormCadastro() {
@@ -23,17 +24,18 @@ export default function FormCadastro() {
   }
 
   return (
-    <div className='Form'>
+    <div className='form-container'>
+      <h1>Cadastro</h1>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className='form-group'>
           <label htmlFor='username'>User Name</label>
           <input name='username' onChange={handleChangeValue} />
         </div>
-        <div>
+        <div className='form-group'>
           <label htmlFor='email'>Email</label>
           <input name='email' onChange={handleChangeValue} />
         </div>
-        <div>
+        <div className='form-group'>
           <label htmlFor='senha'>Senha</label>
           <input name='senha' type='password' onChange={handleChangeValue} />
         </div>

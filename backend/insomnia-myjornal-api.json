@@ -1,0 +1,720 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-06-17T00:00:00.000Z",
+  "__export_source": "codex",
+  "resources": [
+    {
+      "_id": "wrk_myjornal_api",
+      "parentId": null,
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "name": "MyJornal API",
+      "description": "Colecao de requisicoes para a API Express do projeto.",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_myjornal_base",
+      "parentId": "wrk_myjornal_api",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:3000",
+        "access_token": "",
+        "refresh_token": "",
+        "user_id": "",
+        "friend_id": "",
+        "post_id": ""
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url",
+          "access_token",
+          "refresh_token",
+          "user_id",
+          "friend_id",
+          "post_id"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1781654400000,
+      "_type": "environment"
+    },
+    {
+      "_id": "fld_geral",
+      "parentId": "wrk_myjornal_api",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "name": "Geral",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -3000,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_auth",
+      "parentId": "wrk_myjornal_api",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "name": "Autenticacao",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -2000,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_users",
+      "parentId": "wrk_myjornal_api",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "name": "Usuarios",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1000,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_posts",
+      "parentId": "wrk_myjornal_api",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "name": "Posts",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": 0,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_health",
+      "parentId": "fld_geral",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/",
+      "name": "Health Check",
+      "description": "Verifica se a API esta online.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -200,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_sample_data",
+      "parentId": "fld_geral",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/data",
+      "name": "Dados de Exemplo",
+      "description": "Retorna uma resposta JSON simples.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -100,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_auth_register",
+      "parentId": "fld_auth",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/auth/register",
+      "name": "Cadastrar Usuario",
+      "description": "Cria um usuario novo e retorna accessToken e refreshToken.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Lucas Teste\",\n  \"email\": \"lucas.teste@example.com\",\n  \"password\": \"Senha123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -500,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_auth_login",
+      "parentId": "fld_auth",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/auth/login",
+      "name": "Login",
+      "description": "Use a resposta para preencher as variaveis access_token, refresh_token e user_id no ambiente.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"mickey0@example.com\",\n  \"password\": \"password123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -400,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_auth_refresh",
+      "parentId": "fld_auth",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/auth/refresh",
+      "name": "Renovar Access Token",
+      "description": "Gera um novo accessToken usando refresh_token.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"refreshToken\": \"{{ _.refresh_token }}\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -300,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_auth_logout",
+      "parentId": "fld_auth",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/auth/logout",
+      "name": "Logout",
+      "description": "Remove o refreshToken enviado.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"refreshToken\": \"{{ _.refresh_token }}\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -200,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_auth_logout_all",
+      "parentId": "fld_auth",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/auth/logout-all",
+      "name": "Logout Todos",
+      "description": "A regra do controller espera usuario autenticado. No arquivo de rotas atual esta rota nao aplica o middleware authenticate.",
+      "method": "POST",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -100,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_users_list",
+      "parentId": "fld_users",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/users",
+      "name": "Listar Usuarios",
+      "description": "Lista todos os usuarios cadastrados.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -800,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_users_get_by_id",
+      "parentId": "fld_users",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/users/{{ _.user_id }}",
+      "name": "Buscar Usuario por ID",
+      "description": "Busca um usuario especifico. Preencha user_id no ambiente.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -700,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_users_create",
+      "parentId": "fld_users",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/users",
+      "name": "Criar Usuario",
+      "description": "Cria usuario por rota protegida.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Maria Teste\",\n  \"email\": \"maria.teste@example.com\",\n  \"password\": \"Senha123\",\n  \"imagem\": \"https://i.pravatar.cc/300?u=maria\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -600,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_users_available_friends",
+      "parentId": "fld_users",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/users/availablefriends",
+      "name": "Listar Amigos Disponiveis",
+      "description": "Lista usuarios que ainda podem receber solicitacao de amizade.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -500,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_users_friends",
+      "parentId": "fld_users",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/users/friends",
+      "name": "Listar Amigos",
+      "description": "Lista amigos do usuario logado.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -400,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_users_solicitacao",
+      "parentId": "fld_users",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/users/solicitacao",
+      "name": "Listar Solicitacoes Enviadas",
+      "description": "Lista pedidos enviados pelo usuario logado.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -300,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_users_aprovacao_list",
+      "parentId": "fld_users",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/users/aprovacao",
+      "name": "Listar Solicitacoes Recebidas",
+      "description": "Lista pedidos aguardando aprovacao do usuario logado.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -200,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_users_add_friend",
+      "parentId": "fld_users",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/users/add_friend",
+      "name": "Enviar Solicitacao de Amizade",
+      "description": "Envia pedido para friend_id.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"friendId\": \"{{ _.friend_id }}\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -100,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_users_approve_friend",
+      "parentId": "fld_users",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/users/aprovacao",
+      "name": "Aprovar Solicitacao",
+      "description": "Aprova o pedido recebido de friend_id.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"friendId\": \"{{ _.friend_id }}\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 0,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_users_reject_friend",
+      "parentId": "fld_users",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/users/reprovacao",
+      "name": "Reprovar Solicitacao",
+      "description": "Reprova o pedido recebido de friend_id.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"friendId\": \"{{ _.friend_id }}\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 100,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_posts_create",
+      "parentId": "fld_posts",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/post",
+      "name": "Criar Post",
+      "description": "Cria um post para o usuario autenticado.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"title\": \"Meu primeiro post\",\n  \"description\": \"Conteudo do post criado via Insomnia.\",\n  \"isPublic\": true\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -400,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_posts_my",
+      "parentId": "fld_posts",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/post",
+      "name": "Listar Meus Posts",
+      "description": "Lista posts criados pelo usuario logado.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -300,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_posts_list",
+      "parentId": "fld_posts",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/post/list",
+      "name": "Listar Posts Visiveis",
+      "description": "Lista posts publicos, proprios e privados de amigos.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -200,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_posts_delete",
+      "parentId": "fld_posts",
+      "modified": 1781654400000,
+      "created": 1781654400000,
+      "url": "{{ _.base_url }}/api/post/{{ _.post_id }}",
+      "name": "Deletar Post",
+      "description": "Remove o post informado em post_id. Apenas o criador pode deletar.",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.access_token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -100,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    }
+  ]
+}

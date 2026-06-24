@@ -1,0 +1,634 @@
+[
+  {
+    "name": "Mickey Mouse",
+    "email": "mickey0@example.com",
+    "password": "password123",
+    "friends": [
+      "donald1@example.com",
+      "goofy2@example.com"
+    ],
+    "solicitacao": [
+      "minnie3@example.com"
+    ],
+    "aprovacao": [
+      "pluto4@example.com"
+    ],
+    "imagem": "https://i.pravatar.cc/300?u=557"
+  },
+  {
+    "name": "Donald Duck",
+    "email": "donald1@example.com",
+    "password": "password123",
+    "friends": [
+      "mickey0@example.com"
+    ],
+    "solicitacao": [
+      "minnie3@example.com"
+    ],
+    "imagem": "https://i.pravatar.cc/300?u=592"
+  },
+  {
+    "name": "Goofy",
+    "email": "goofy2@example.com",
+    "password": "password123",
+    "friends": [
+      "mickey0@example.com"
+    ],
+    "aprovacao": [
+      "daffy5@example.com"
+    ],
+    "imagem": "https://i.pravatar.cc/300?u=203"
+  },
+  {
+    "name": "Minnie Mouse",
+    "email": "minnie3@example.com",
+    "password": "password123",
+    "aprovacao": [
+      "mickey0@example.com",
+      "donald1@example.com"
+    ],
+    "imagem": "https://i.pravatar.cc/300?u=51"
+  },
+  {
+    "name": "Pluto",
+    "email": "pluto4@example.com",
+    "password": "password123",
+    "solicitacao": [
+      "mickey0@example.com"
+    ],
+    "imagem": "https://i.pravatar.cc/300?u=931"
+  },
+  {
+    "name": "Daffy Duck",
+    "email": "daffy5@example.com",
+    "password": "password123",
+    "solicitacao": [
+      "goofy2@example.com"
+    ],
+    "imagem": "https://i.pravatar.cc/300?u=879"
+  },
+  {
+    "name": "Bugs Bunny",
+    "email": "bugs6@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=313"
+  },
+  {
+    "name": "Porky Pig",
+    "email": "porky7@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=790"
+  },
+  {
+    "name": "Snoopy",
+    "email": "snoopy8@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=249"
+  },
+  {
+    "name": "Charlie Brown",
+    "email": "charlie9@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=702"
+  },
+  {
+    "name": "Tom",
+    "email": "tom10@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=515"
+  },
+  {
+    "name": "Jerry",
+    "email": "jerry11@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=858"
+  },
+  {
+    "name": "Scooby-Doo",
+    "email": "scooby12@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=888"
+  },
+  {
+    "name": "Shaggy",
+    "email": "shaggy13@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=539"
+  },
+  {
+    "name": "Fred Flintstone",
+    "email": "fred14@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=175"
+  },
+  {
+    "name": "Wilma Flintstone",
+    "email": "wilma15@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=751"
+  },
+  {
+    "name": "Barney Rubble",
+    "email": "barney16@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=207"
+  },
+  {
+    "name": "Betty Rubble",
+    "email": "betty17@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=763"
+  },
+  {
+    "name": "George Jetson",
+    "email": "george18@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=170"
+  },
+  {
+    "name": "Judy Jetson",
+    "email": "judy19@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=612"
+  },
+  {
+    "name": "Elmer Fudd",
+    "email": "elmer20@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=7"
+  },
+  {
+    "name": "Bugs Bunny",
+    "email": "bugs21@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=703"
+  },
+  {
+    "name": "Yogi Bear",
+    "email": "yogi22@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=529"
+  },
+  {
+    "name": "Boo Boo",
+    "email": "booboo23@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=4"
+  },
+  {
+    "name": "Mr. Magoo",
+    "email": "magoo24@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=252"
+  },
+  {
+    "name": "Heidi",
+    "email": "heidi25@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=137"
+  },
+  {
+    "name": "Tom Sawyer",
+    "email": "tom26@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=535"
+  },
+  {
+    "name": "Huckleberry Finn",
+    "email": "huck27@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=277"
+  },
+  {
+    "name": "Astro Boy",
+    "email": "astro28@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=404"
+  },
+  {
+    "name": "Mighty Mouse",
+    "email": "mighty29@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=317"
+  },
+  {
+    "name": "He-Man",
+    "email": "heman30@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=990"
+  },
+  {
+    "name": "She-Ra",
+    "email": "shera31@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=503"
+  },
+  {
+    "name": "Gandalf",
+    "email": "gandalf32@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=762"
+  },
+  {
+    "name": "Frodo Baggins",
+    "email": "frodo33@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=310"
+  },
+  {
+    "name": "Samwise Gamgee",
+    "email": "sam34@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=514"
+  },
+  {
+    "name": "Batman",
+    "email": "batman35@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=570"
+  },
+  {
+    "name": "Superman",
+    "email": "superman36@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=983"
+  },
+  {
+    "name": "Wonder Woman",
+    "email": "wonder37@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=850"
+  },
+  {
+    "name": "Flash",
+    "email": "flash38@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=45"
+  },
+  {
+    "name": "Green Lantern",
+    "email": "lantern39@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=799"
+  },
+  {
+    "name": "Aquaman",
+    "email": "aquaman40@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=977"
+  },
+  {
+    "name": "Spider-Man",
+    "email": "spider41@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=966"
+  },
+  {
+    "name": "Iron Man",
+    "email": "iron42@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=777"
+  },
+  {
+    "name": "Captain America",
+    "email": "cap43@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=341"
+  },
+  {
+    "name": "Thor",
+    "email": "thor44@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=122"
+  },
+  {
+    "name": "Hulk",
+    "email": "hulk45@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=721"
+  },
+  {
+    "name": "Black Widow",
+    "email": "widow46@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=832"
+  },
+  {
+    "name": "Hawkeye",
+    "email": "hawkeye47@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=195"
+  },
+  {
+    "name": "Vision",
+    "email": "vision48@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=52"
+  },
+  {
+    "name": "Scarlet Witch",
+    "email": "witch49@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=894"
+  },
+  {
+    "name": "Star-Lord",
+    "email": "starlord50@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=837"
+  },
+  {
+    "name": "Gamora",
+    "email": "gamora51@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=103"
+  },
+  {
+    "name": "Drax",
+    "email": "drax52@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=668"
+  },
+  {
+    "name": "Rocket Raccoon",
+    "email": "rocket53@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=83"
+  },
+  {
+    "name": "Groot",
+    "email": "groot54@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=787"
+  },
+  {
+    "name": "Mickey Mouse",
+    "email": "mickey55@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=651"
+  },
+  {
+    "name": "Minnie Mouse",
+    "email": "minnie56@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=954"
+  },
+  {
+    "name": "Donald Duck",
+    "email": "donald57@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=141"
+  },
+  {
+    "name": "Daisy Duck",
+    "email": "daisy58@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=479"
+  },
+  {
+    "name": "Goofy",
+    "email": "goofy59@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=976"
+  },
+  {
+    "name": "Pluto",
+    "email": "pluto60@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=410"
+  },
+  {
+    "name": "Pete",
+    "email": "pete61@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=752"
+  },
+  {
+    "name": "Clarabelle Cow",
+    "email": "clarabelle62@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=971"
+  },
+  {
+    "name": "Horace Horsecollar",
+    "email": "horace63@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=384"
+  },
+  {
+    "name": "Mighty Mouse",
+    "email": "mighty64@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=70"
+  },
+  {
+    "name": "Tom and Jerry",
+    "email": "tomjerry65@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=56"
+  },
+  {
+    "name": "Wile E. Coyote",
+    "email": "wile66@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=71"
+  },
+  {
+    "name": "Road Runner",
+    "email": "roadrunner67@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=183"
+  },
+  {
+    "name": "Bugs Bunny",
+    "email": "bugs68@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=493"
+  },
+  {
+    "name": "Daffy Duck",
+    "email": "daffy69@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=588"
+  },
+  {
+    "name": "Porky Pig",
+    "email": "porky70@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=707"
+  },
+  {
+    "name": "Sylvester",
+    "email": "sylvester71@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=223"
+  },
+  {
+    "name": "Tweety",
+    "email": "tweety72@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=628"
+  },
+  {
+    "name": "Yosemite Sam",
+    "email": "sam73@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=863"
+  },
+  {
+    "name": "Foghorn Leghorn",
+    "email": "foghorn74@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=434"
+  },
+  {
+    "name": "Pepe Le Pew",
+    "email": "pepe75@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=596"
+  },
+  {
+    "name": "The Road Runner",
+    "email": "roadrunner76@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=810"
+  },
+  {
+    "name": "Marty McFly",
+    "email": "marty77@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=935"
+  },
+  {
+    "name": "Doc Brown",
+    "email": "doc78@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=960"
+  },
+  {
+    "name": "Bender",
+    "email": "bender79@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=895"
+  },
+  {
+    "name": "Fry",
+    "email": "fry80@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=968"
+  },
+  {
+    "name": "Leela",
+    "email": "leela81@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=697"
+  },
+  {
+    "name": "Professor Farnsworth",
+    "email": "professor82@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=206"
+  },
+  {
+    "name": "Rick Sanchez",
+    "email": "rick83@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=391"
+  },
+  {
+    "name": "Morty Smith",
+    "email": "morty84@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=825"
+  },
+  {
+    "name": "Summer Smith",
+    "email": "summer85@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=649"
+  },
+  {
+    "name": "Jerry Smith",
+    "email": "jerry86@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=768"
+  },
+  {
+    "name": "Beth Smith",
+    "email": "beth87@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=243"
+  },
+  {
+    "name": "Bob Belcher",
+    "email": "bob88@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=414"
+  },
+  {
+    "name": "Linda Belcher",
+    "email": "linda89@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=823"
+  },
+  {
+    "name": "Tina Belcher",
+    "email": "tina90@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=496"
+  },
+  {
+    "name": "Gene Belcher",
+    "email": "gene91@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=385"
+  },
+  {
+    "name": "Louise Belcher",
+    "email": "louise92@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=985"
+  },
+  {
+    "name": "SpongeBob SquarePants",
+    "email": "spongebob93@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=311"
+  },
+  {
+    "name": "Patrick Star",
+    "email": "patrick94@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=581"
+  },
+  {
+    "name": "Sandy Cheeks",
+    "email": "sandy95@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=271"
+  },
+  {
+    "name": "Squidward Tentacles",
+    "email": "squidward96@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=962"
+  },
+  {
+    "name": "Mr. Krabs",
+    "email": "krabs97@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=859"
+  },
+  {
+    "name": "Plankton",
+    "email": "plankton98@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=129"
+  },
+  {
+    "name": "Gary the Snail",
+    "email": "gary99@example.com",
+    "password": "password123",
+    "imagem": "https://i.pravatar.cc/300?u=231"
+  }
+]

@@ -1,0 +1,8 @@
+#Link para baixar gerenciador do mongodb
+https://www.mongodb.com/try/download/compass
+
+#URL de conexão do mongo DB
+mongodb://meu_usuario:minha_senha@localhost:27017
+
+#Subir mongodb via Docker
+docker run -d --name mongodb -p 27017:27017 -v dados-mongodb:/data/db -e MONGO_INITDB_ROOT_USERNAME=jornal -e MONGO_INITDB_ROOT_PASSWORD=jornal mongo

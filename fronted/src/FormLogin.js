@@ -33,10 +33,10 @@ export default function FormLogin() {
           <input name='senha' onChange={handleChangeValue} />
         </div>
         <div>
-          <button type='submit'>Submit</button>
+          <button type='submit'><Button href='/logado'>Submit</Button></button>
+          <button type="button" class="back-button"><Button href='/'>Voltar</Button></button>
         </div>
       </form>
-      <Button href='/logado'>Logar</Button> 
     </div>
   )
 }

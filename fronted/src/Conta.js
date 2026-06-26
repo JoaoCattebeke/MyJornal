@@ -1,15 +1,16 @@
 import { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import './style/cadastro.css'
+import './style/materia.css'
 
 
-export default function FormCadastro() {
+export default function Conta() {
   const [dataForm, setDataForm] = useState({
     username: '',
     email: '',
     senha: '',
     confirmarsenha: ''
-  })
+  }) //user
 
   const handleChangeValue = (event) => {
     setDataForm((dataForm) => ({
@@ -24,8 +25,14 @@ export default function FormCadastro() {
   }
 
   return (
+    <>
+      <header class="cabecalho">
+        <h1>MYJORNAL</h1>
+            <button type="button" class="botao botao-conta">Deslogar</button>
+            <button type="button" class="botao botao-conta"><Button href='/logado'>Voltar</Button></button>
+    </header>
     <div className='form-container'>
-      <h1>Cadastro</h1>
+      <h1><h2>Informações da conta</h2></h1>
       <form onSubmit={handleSubmit}>
         <div className='form-group'>
           <label htmlFor='username'>User Name</label>
@@ -45,9 +52,9 @@ export default function FormCadastro() {
         </div>
         <div>
           <button type='submit'>Submit</button>
-          <button type="button" class="back-button"><Button href='/'>Voltar</Button></button>
         </div>
       </form> 
     </div>
+    </>
   )
 }
